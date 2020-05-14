@@ -1,4 +1,5 @@
 import { Negociacao } from "./Negociacao";
+import { NegociacaoController } from "../controllers/NegociacaoController";
 
 export class Negociacoes {
 
@@ -9,7 +10,7 @@ export class Negociacoes {
     }
 
     paraArray(): Negociacao[] {
-        return [].concat(this._negociacoes);
+        return ([] as Negociacao[]).concat(this._negociacoes);
     }
 
 }
